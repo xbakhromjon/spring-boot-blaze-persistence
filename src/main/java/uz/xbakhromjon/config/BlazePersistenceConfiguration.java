@@ -32,7 +32,7 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 
 @Configuration
-@EnableEntityViews(basePackages = { "uz.xbakhromjon.view"})
+@EnableEntityViews(basePackages = { "uz.xbakhromjon.repository"})
 @EnableBlazeRepositories(
         basePackages = "uz.xbakhromjon.repository")
 public class BlazePersistenceConfiguration {

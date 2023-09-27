@@ -21,7 +21,6 @@ import com.blazebit.persistence.spring.data.repository.EntityViewSpecificationEx
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import uz.xbakhromjon.model.Person;
-import uz.xbakhromjon.view.PersonWithKittens;
 
 @Repository
 @Transactional(readOnly = true)

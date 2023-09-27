@@ -14,25 +14,16 @@
  * limitations under the License.
  */
 
-package uz.xbakhromjon.view;
+package uz.xbakhromjon.repository;
 
-import com.blazebit.persistence.view.CollectionMapping;
-import com.blazebit.persistence.view.EntityView;
-import com.blazebit.persistence.view.IdMapping;
-import jakarta.persistence.OrderBy;
-import uz.xbakhromjon.model.Cat;
-import uz.xbakhromjon.model.Person;
-
-import java.util.Set;
+import com.blazebit.persistence.view.*;
+import uz.xbakhromjon.model.*;
 
 @EntityView(Person.class)
-public interface PersonWithKittens {
-
+public interface PersonSimpleView {
+    
     @IdMapping
     Integer getId();
 
     String getName();
-
-    @CollectionMapping(comparator = CatSimpleView.DefaultComparator.class)
-    Set<CatSimpleView> getKittens();
 }

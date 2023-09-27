@@ -32,7 +32,7 @@ import uz.xbakhromjon.model.Person;
 import uz.xbakhromjon.repository.CatRepository;
 import uz.xbakhromjon.repository.PersonRepository;
 import uz.xbakhromjon.repository.PersonWithKittensViewRepository;
-import uz.xbakhromjon.view.PersonWithKittens;
+import uz.xbakhromjon.repository.PersonWithKittens;
 
 import java.util.HashSet;
 import java.util.List;

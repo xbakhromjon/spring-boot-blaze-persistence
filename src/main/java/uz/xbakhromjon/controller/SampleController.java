@@ -14,24 +14,24 @@
  * limitations under the License.
  */
 
-package uz.xbakhromjon.controller;
-
-import uz.xbakhromjon.repository.PersonWithKittensViewRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-@Controller
-public class SampleController {
-
-    @Autowired
-    PersonWithKittensViewRepository catRepo;
-
-    @GetMapping("/")
-    @ResponseBody
-    String home() {
-        return catRepo.findAll().toString();
-    }
-
-}
+//package uz.xbakhromjon.controller;
+//
+//import uz.xbakhromjon.repository.PersonWithKittensViewRepository;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.stereotype.Controller;
+//import org.springframework.web.bind.annotation.GetMapping;
+//import org.springframework.web.bind.annotation.ResponseBody;
+//
+//@Controller
+//public class SampleController {
+//
+//    @Autowired
+//    PersonWithKittensViewRepository catRepo;
+//
+//    @GetMapping("/")
+//    @ResponseBody
+//    String home() {
+//        return catRepo.findAll().toString();
+//    }
+//
+//}

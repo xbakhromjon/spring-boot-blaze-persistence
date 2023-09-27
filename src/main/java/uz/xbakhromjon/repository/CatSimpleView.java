@@ -14,16 +14,28 @@
  * limitations under the License.
  */
 
-package uz.xbakhromjon.view;
+package uz.xbakhromjon.repository;
 
-import com.blazebit.persistence.view.*;
-import uz.xbakhromjon.model.*;
+import com.blazebit.persistence.view.EntityView;
+import com.blazebit.persistence.view.IdMapping;
+import uz.xbakhromjon.model.Cat;
 
-@EntityView(Person.class)
-public interface PersonSimpleView {
-    
+import java.util.Comparator;
+
+@EntityView(Cat.class)
+public interface CatSimpleView {
+
     @IdMapping
     Integer getId();
 
     String getName();
+
+
+    class DefaultComparator implements Comparator<CatSimpleView> {
+
+        @Override
+        public int compare(CatSimpleView o1, CatSimpleView o2) {
+            return Integer.compare(o1.getId(), o2.getId());
+        }
+    }
 }

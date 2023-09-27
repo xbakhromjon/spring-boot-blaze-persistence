@@ -18,7 +18,7 @@ package uz.xbakhromjon.sample;
 
 import java.util.*;
 
-import uz.xbakhromjon.view.CatSimpleView;
+import uz.xbakhromjon.repository.CatSimpleView;
 import uz.xbakhromjon.repository.PersonWithKittensViewRepository;
 import org.junit.Assert;
 import org.junit.Test;
